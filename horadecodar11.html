@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        
+var valor1 = parseInt(prompt("Por favor, insira o primeiro valor inteiro:"));
+var valor2 = parseInt(prompt("Agora, insira o segundo valor inteiro:"));
+
+
+var operacao = parseInt(prompt("Escolha a operação desejada:\n1. Adição\n2. Subtração\n3. Divisão\n4. Multiplicação"));
+
+
+var resultado;
+
+switch (operacao) {
+    case 1:
+        resultado = valor1 + valor2; 
+        break;
+    case 2:
+        resultado = valor1 - valor2; 
+        break;
+    case 3:
+        resultado = valor1 / valor2; 
+        break;
+    case 4:
+        resultado = valor1 * valor2; 
+        break;
+    default:
+        alert("Operação inválida.");
+        break;
+}
+
+
+if (!isNaN(resultado)) {
+    alert("O resultado da operação é: " + resultado);
+}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
